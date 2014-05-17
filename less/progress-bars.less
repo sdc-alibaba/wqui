@@ -68,18 +68,12 @@
     .transition(width .6s ease);
   }
 
-  .text {
-    color: @textColor;
+  .bar-text {
     position: absolute;
-    width: 100px;
+    color: @textColor;
     text-align: center;
-    // center
-    left: 50%;
-    margin-left: -50px;
-    height: @baseLineHeight;
-    line-height: @baseLineHeight;
-    top: 50%;
-    margin-top: -1 * @baseLineHeight / 2;
+    width: 100%;
+    padding: 2px 0;
   }
 
   //不同大小
@@ -87,8 +81,11 @@
     height: @baseLineHeight;
     line-height: @baseLineHeight;
     font-size: @fontSizeSmall;
-    .bar {
-      padding: 0 0;
+
+    .bar,
+    .bar-text
+    {
+      padding: 0;
     }
   }
   &.progress-large {
