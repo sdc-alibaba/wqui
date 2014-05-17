@@ -2092,10 +2092,10 @@ sui-pre .sui-code {
   height: 22px;
 }
 .sui-form .input-xfat {
-  padding: 8px 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: 22px;
-  height: 22px;
 }
 .sui-form .input-fat {
   padding-right: 10px;
@@ -2455,10 +2455,10 @@ sui-pre .sui-code {
 .sui-form input[type="tel"].input-xfat,
 .sui-form input[type="color"].input-xfat,
 .sui-form .uneditable-input.input-xfat {
-  padding: 8px 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: 22px;
-  height: 22px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -8532,6 +8532,7 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   white-space: pre-wrap;
 }
+.type-style.default .tooltip-inner,
 .type-style.normal .tooltip-inner,
 .type-style.confirm .tooltip-inner {
   background-color: #e5f4f6;
@@ -8592,6 +8593,7 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   white-space: pre-wrap;
 }
+.sui-tooltip.default .tooltip-inner,
 .sui-tooltip.normal .tooltip-inner,
 .sui-tooltip.confirm .tooltip-inner {
   background-color: #e5f4f6;
@@ -8652,6 +8654,7 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   white-space: pre-wrap;
 }
+.sui-tooltip.default .tooltip-inner,
 .sui-tooltip.normal .tooltip-inner,
 .sui-tooltip.confirm .tooltip-inner {
   background-color: #e5f4f6;
@@ -8698,6 +8701,7 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   white-space: pre-wrap;
 }
+.tooltip-only-arrow.default .tooltip-inner,
 .tooltip-only-arrow.normal .tooltip-inner,
 .tooltip-only-arrow.confirm .tooltip-inner {
   background-color: #e5f4f6;
@@ -9724,25 +9728,21 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
-.sui-progress .text {
-  color: #333333;
+.sui-progress .bar-text {
   position: absolute;
-  width: 100px;
+  color: #333333;
   text-align: center;
-  left: 50%;
-  margin-left: -50px;
-  height: 18px;
-  line-height: 18px;
-  top: 50%;
-  margin-top: -9px;
+  width: 100%;
+  padding: 2px 0;
 }
 .sui-progress.progress-small {
   height: 18px;
   line-height: 18px;
   font-size: 12px;
 }
-.sui-progress.progress-small .bar {
-  padding: 0 0;
+.sui-progress.progress-small .bar,
+.sui-progress.progress-small .bar-text {
+  padding: 0;
 }
 .sui-progress.progress-large {
   height: 36px;
