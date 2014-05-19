@@ -59,7 +59,11 @@
         .round {
             background-color: @white;
             background-color: transparent\9;
-            color: @stepsCurrentColor;
+            color: @white;
+            > i {
+                color: @stepsFinishedColor;
+                font-size: @baseFontSize;
+            }
         }
     }
     .current {
