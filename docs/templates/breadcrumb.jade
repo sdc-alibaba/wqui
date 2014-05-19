@@ -7,8 +7,32 @@ block sidebar
     +sidebar('breadcrumb')
 
 block content
-  div.docs-description
-    img(src='pictures/docs/breadcrumb.png')
+
+    h1 面包屑
+
+    h2.sui-page-header 设计规范
+
+    div.docs-description
+        img(src='pictures/docs/breadcrumb.png')
+
+    ul.demo-operations.clearfix
+      li
+        a(href='#') 下载psd文件
+
+    h2.sui-page-header 开发者文档
+
+    ul.sui-nav.nav-tabs.nav-large
+        li.active
+            a(href='#demo1', data-toggle='tab') 示例
+        li
+            a(href='#code1', data-toggle='tab') 代码
+        li
+            a(href='#doc1', data-toggle='tab') 文档
+    div.tab-content
+        div.tab-pane.active#demo1
+            div.bs-docs-example
+                ul.sui-breadcrumb
+                    li.active 首页
 
   ul.sui-nav.nav-tabs.nav-large
       li.active

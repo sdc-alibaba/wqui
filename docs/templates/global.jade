@@ -9,12 +9,19 @@ block sidebar
 block content
   - var SIZES = ['xlarge', 'large', '', 'small']
   - var ROLES = ["", "primary", "success", "info", "warning", "danger", "inverse"]
+
+  h1 全局样式
+
+  h2.sui-page-header 设计规范
+
   div.docs-description
-    img(src='pictures/docs/text.png' style='width: 800px;')
+      img(src='pictures/docs/text.png')
 
   ul.demo-operations.clearfix
     li
-      a(href='#') 下载psd文件
+        a(href='#') 下载psd文件
+
+  h2.sui-page-header 开发者文档
 
   h2 1. 基础字体和颜色
   ul.sui-nav.nav-tabs.nav-large
