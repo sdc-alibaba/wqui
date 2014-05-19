@@ -19,7 +19,7 @@
 **gulp 暂时无人维护，不要用**
 
 ### iconfont
-图标全部用iconfont实现。 
+图标全部用iconfont实现。  
 
 ### git协作：
 
