@@ -9,7 +9,7 @@
     <link href="../.package/css/sui.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="pictures/logo.png">
     <script src="../js/lib/jquery.js"></script>
     <script src="../.package/js/sui.js"></script>
     <script>
@@ -43,11 +43,12 @@
             <ul class="sui-nav nav-tabs nav-stacked nav-xlarge docs-sidenav">
               <li><a href="global.html"><i class="sui-icon icon-globe">&nbsp;</i>全局样式</a>
               </li>
-              <li><a><i class="sui-icon icon-magic">&nbsp;</i>基础css<i class="sui-icon icon-angle-down pull-right"></i></a>
+              <li class="active"><a><i class="sui-icon icon-magic">&nbsp;</i>基础css<i class="sui-icon icon-angle-down pull-right"></i></a>
                 <ul class="sui-nav nav-tabs nav-stacked">
                   <li><a href="buttons.html">按钮</a></li>
                   <li><a href="forms.html">表单</a></li>
                   <li><a href="icons.html">图标</a></li>
+                  <li class="active"><a href="tables.html">表格</a></li>
                 </ul>
               </li>
               <li><a><i class="sui-icon icon-picture">&nbsp;</i>css组件<i class="sui-icon icon-angle-down pull-right"></i></a>
@@ -70,7 +71,7 @@
                   <li><a href="pagination-js.html">分页器</a></li>
                   <li><a href="dropdown-js.html">下拉菜单</a></li>
                   <li><a href="tree-js.html">级联选择</a></li>
-                  <li><a href="datepicker.html">datepicker</a></li>
+                  <li><a href="datetimepicker.html">datetimepicker</a></li>
                 </ul>
               </li>
             </ul>
@@ -78,19 +79,20 @@
       </div>
       <div class="content">
         <div class="content-inner">
-          <div class="sui-page-header">
-            <h1>表格</h1>
-          </div>
+          <h1>表格</h1>
+          <h2 class="sui-page-header">设计规范</h2>
+          <div class="docs-description"><img src="pictures/docs/table.png"></div>
+          <ul class="demo-operations clearfix">
+            <li><a href="#">下载psd文件</a></li>
+          </ul>
+          <h2 class="sui-page-header">开发者文档</h2>
           <p class="sui-lead">表格有两种用法：
             <ul class="unstyled">
               <li>一种是简单的数据列表，只包含简单的文本和链接。</li>
               <li>另一种是把表格当做容器，里面会有很复杂的结构，可能包括图片、链接、复杂的文案等。</li>
             </ul>
           </p>
-          <ul class="demo-operations clearfix">
-            <li><a href="#">下载psd文件</a></li>
-          </ul>
-          <h2>1. 默认表格</h2>
+          <h2>默认表格</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo1" data-toggle="tab">示例</a></li>
             <li><a href="#code1" data-toggle="tab">代码</a></li>
@@ -145,7 +147,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo1&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>2. 带边框和不带边框的表格</h2>
+          <h2>带边框和不带边框的表格</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo2" data-toggle="tab">示例</a></li>
             <li><a href="#code2" data-toggle="tab">代码</a></li>
@@ -236,7 +238,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo2&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>3. 只有内边框的表格</h2>
+          <h2>只有内边框的表格</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo3" data-toggle="tab">示例</a></li>
             <li><a href="#code3" data-toggle="tab">代码</a></li>
@@ -291,7 +293,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo3&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>4. 表头在侧边</h2>
+          <h2>表头在侧边</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo4" data-toggle="tab">示例</a></li>
             <li><a href="#code4" data-toggle="tab">代码</a></li>
@@ -338,7 +340,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo4&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>5. 斑马线</h2>
+          <h2>斑马线</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo5" data-toggle="tab">示例</a></li>
             <li><a href="#code5" data-toggle="tab">代码</a></li>
@@ -421,62 +423,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo5&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>6. 首要表格</h2>
-          <ul class="sui-nav nav-tabs nav-large">
-            <li class="active"><a href="#demo6" data-toggle="tab">示例</a></li>
-            <li><a href="#code6" data-toggle="tab">代码</a></li>
-            <li><a href="#doc6" data-toggle="tab">文档</a></li>
-          </ul>
-          <div class="tab-content">
-            <div id="demo6" class="tab-pane active">
-              <div class="bs-docs-example">
-                          <table class="sui-table table-primary">
-                            <thead>
-                              <tr>
-                                <th>＃</th>
-                                <th>待付款</th>
-                                <th>宝宝数量</th>
-                                <th>交易金额</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>所有交易</td>
-                                <td>9999.00</td>
-                                <td>999</td>
-                                <td>99999.00</td>
-                              </tr>
-                              <tr>
-                                <td>待付款</td>
-                                <td>9999.00</td>
-                                <td>999</td>
-                                <td>99999.00</td>
-                              </tr>
-                              <tr>
-                                <td>已发货</td>
-                                <td>9999.00</td>
-                                <td>999</td>
-                                <td>99999.00</td>
-                              </tr>
-                              <tr>
-                                <td>已成功</td>
-                                <td>9999.00</td>
-                                <td>999</td>
-                                <td>99999.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
-              </div>
-            </div>
-            <div id="code6" class="tab-pane">
-              <pre data-target="#demo6&gt;div" class="prettyprint linenums"></pre>
-            </div>
-            <div id="doc6" class="tab-pane">首要表格，颜色接近首要按钮的颜色</div>
-          </div>
-          <ul class="demo-operations clearfix">
-            <li><a href="javascript:void(0)" data-target="#demo6&gt;div" class="copy-btn">复制代码</a></li>
-          </ul>
-          <h2>7. 二维表格</h2>
+          <h2>二维表格</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo7" data-toggle="tab">示例</a></li>
             <li><a href="#code7" data-toggle="tab">代码</a></li>
@@ -543,7 +490,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo7&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>8. 综合表格一</h2>
+          <h2>综合表格一</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo8" data-toggle="tab">示例</a></li>
             <li><a href="#code8" data-toggle="tab">代码</a></li>
@@ -611,7 +558,7 @@
           <ul class="demo-operations clearfix">
             <li><a href="javascript:void(0)" data-target="#demo8&gt;div" class="copy-btn">复制代码</a></li>
           </ul>
-          <h2>9. 综合表格二</h2>
+          <h2>综合表格二</h2>
           <ul class="sui-nav nav-tabs nav-large">
             <li class="active"><a href="#demo9" data-toggle="tab">示例</a></li>
             <li><a href="#code9" data-toggle="tab">代码</a></li>

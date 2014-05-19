@@ -9,7 +9,7 @@
     <link href="../.package/css/sui.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="pictures/logo.png">
     <script src="../js/lib/jquery.js"></script>
     <script src="../.package/js/sui.js"></script>
     <script>
@@ -48,6 +48,7 @@
                   <li class="active"><a href="buttons.html">按钮</a></li>
                   <li><a href="forms.html">表单</a></li>
                   <li><a href="icons.html">图标</a></li>
+                  <li><a href="tables.html">表格</a></li>
                 </ul>
               </li>
               <li><a><i class="sui-icon icon-picture">&nbsp;</i>css组件<i class="sui-icon icon-angle-down pull-right"></i></a>
@@ -70,7 +71,7 @@
                   <li><a href="pagination-js.html">分页器</a></li>
                   <li><a href="dropdown-js.html">下拉菜单</a></li>
                   <li><a href="tree-js.html">级联选择</a></li>
-                  <li><a href="datepicker.html">datepicker</a></li>
+                  <li><a href="datetimepicker.html">datetimepicker</a></li>
                 </ul>
               </li>
             </ul>
@@ -78,7 +79,21 @@
       </div>
       <div class="content">
         <div class="content-inner">
+          <h1>按钮</h1>
+          <h2 class="sui-page-header">设计规范</h2>
           <div class="docs-description"><img src="pictures/docs/btn.png"></div>
+          <ul class="demo-operations clearfix">
+            <li><a href="#">下载psd文件</a></li>
+          </ul>
+          <h2 class="sui-page-header">开发者文档</h2>
+          <p class="sui-lead">
+            <ul class="unstyled">
+              <li>按钮统一使用下面提供的高度和样式，最好不要自己添加新的尺寸和样式（但是可以把其中某些样式进行重载）。</li>
+              <li>一般情况下推荐使用灰白色按钮，根据具体的页面和使用环境来选择。</li>
+              <li>比较重要的操作或者需要用户明显注意到的地方使用蓝色按钮。</li>
+              <li>黄色按钮请谨慎使用，在非常重要和特殊的情况下需要用户迅速发现并立即处理的时候使用，一个页面不能超过一个黄色按钮。</li>
+            </ul>
+          </p>
           <ul class="demo-operations clearfix">
             <li><a href="#">下载psd文件</a></li>
           </ul>
@@ -89,15 +104,35 @@
           </ul>
           <div class="tab-content">
             <div id="demo1" class="tab-pane active">
-              <div class="bs-docs-example"><a href='javascript:void(0);' class='sui-btn btn-large '>默认</a>
-                 <a href='javascript:void(0);' class='sui-btn btn-large btn-primary'>主要</a>
+              <div class="bs-docs-example"><a href='javascript:void(0);' class='sui-btn btn-xlarge '>默认</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-primary'>首要</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-success'>成功</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-info'>信息</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-warning'>警告</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-danger'>危险</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-xlarge btn-link'>链接</a>
+                 <a disabled href="javascript:void(0);" class="sui-btn btn-xlarge">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-text btn-xlarge">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-link btn-xlarge">禁用</a><br><br><a href='javascript:void(0);' class='sui-btn btn-large '>默认</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-large btn-primary'>首要</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-large btn-success'>成功</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-large btn-info'>信息</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-large btn-warning'>警告</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-large btn-danger'>危险</a>
                  <a href='javascript:void(0);' class='sui-btn btn-large btn-link'>链接</a>
-                 <a href='javascript:void(0);' class='sui-btn btn-large btn-text'>文字按钮</a>
                  <a disabled href="javascript:void(0);" class="sui-btn btn-large">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-text btn-large">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-link btn-large">禁用</a><br><br><a href='javascript:void(0);' class='sui-btn  '>默认</a>
-                 <a href='javascript:void(0);' class='sui-btn  btn-primary'>主要</a>
+                 <a href='javascript:void(0);' class='sui-btn  btn-primary'>首要</a>
+                 <a href='javascript:void(0);' class='sui-btn  btn-success'>成功</a>
+                 <a href='javascript:void(0);' class='sui-btn  btn-info'>信息</a>
+                 <a href='javascript:void(0);' class='sui-btn  btn-warning'>警告</a>
+                 <a href='javascript:void(0);' class='sui-btn  btn-danger'>危险</a>
                  <a href='javascript:void(0);' class='sui-btn  btn-link'>链接</a>
-                 <a href='javascript:void(0);' class='sui-btn  btn-text'>文字按钮</a>
-                 <a disabled href="javascript:void(0);" class="sui-btn ">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-text ">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-link ">禁用</a><br><br>
+                 <a disabled href="javascript:void(0);" class="sui-btn ">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-text ">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-link ">禁用</a><br><br><a href='javascript:void(0);' class='sui-btn btn-small '>默认</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-primary'>首要</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-success'>成功</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-info'>信息</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-warning'>警告</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-danger'>危险</a>
+                 <a href='javascript:void(0);' class='sui-btn btn-small btn-link'>链接</a>
+                 <a disabled href="javascript:void(0);" class="sui-btn btn-small">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-text btn-small">禁用</a><a disabled href="javascript:void(0);" class="sui-btn btn-link btn-small">禁用</a><br><br>
               </div>
             </div>
             <div id="code1" class="tab-pane">
@@ -117,9 +152,15 @@
               <div class="bs-docs-example">
                 <a href='javascript:void(0);' class='sui-btn'><i class='sui-icon icon-pencil'></i>默认</a>
                  
-                <a href='javascript:void(0);' class='sui-btn btn-primary'><i class='sui-icon icon-pencil'></i>主要</a>
+                <a href='javascript:void(0);' class='sui-btn btn-primary'><i class='sui-icon icon-pencil'></i>首要</a>
                  
-                <a href='javascript:void(0);' class='sui-btn btn-text'><i class='sui-icon icon-pencil'></i>文字按钮</a>
+                <a href='javascript:void(0);' class='sui-btn btn-success'><i class='sui-icon icon-pencil'></i>成功</a>
+                 
+                <a href='javascript:void(0);' class='sui-btn btn-info'><i class='sui-icon icon-pencil'></i>信息</a>
+                 
+                <a href='javascript:void(0);' class='sui-btn btn-warning'><i class='sui-icon icon-pencil'></i>警告</a>
+                 
+                <a href='javascript:void(0);' class='sui-btn btn-danger'><i class='sui-icon icon-pencil'></i>危险</a>
                  <a href="javascript:void(0);" class="sui-btn btn-text"><i class="sui-icon icon-pc-refresh"></i></a><a href="javascript:void(0);" class="sui-btn btn-text btn-default"><i class="sui-icon icon-pc-refresh"></i>刷新</a>
               </div>
             </div>
