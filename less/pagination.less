@@ -42,6 +42,9 @@
   background-color: @paginationBackground;
   border: 1px solid @paginationBorder;
   margin-left: -1px; //Collapse the border
+   > i.sui-icon {
+        line-height: @baseLineHeight;
+   }
 }
 .sui-pagination ul > li > a:hover,
 .sui-pagination ul > li > a:focus {
@@ -145,10 +148,24 @@
 }
 */
 
-//输入框拉长
 .sui-pagination {
+    //非主流分页器
+    .prev + .prev,.next + .next {
+        a {
+            margin-left: 5px;
+        }
+    }
+    .ex-page-num {
+        .sui-form > .input-default;
+        width: 18px;
+        float: left;
+        margin: 0px 5px;
+        .border-radius(0);
+    }
+    //输入框拉长
     div {
         display: inline-block;
+        color: @paginationExPageStatus;
         .page-num {
             .sui-form > .input-default;
             .sui-form > .input-fat;
@@ -217,7 +234,6 @@
 // --------------------------------------------------
 
 // Large
-/*
 .pagination-large {
   ul > li > a,
   ul > li > span {
@@ -236,6 +252,9 @@
               vertical-align: top;
           }
       }
+  }
+  .ex-page-num {
+      .sui-form > .input-fat;
   }
 }
 // xlarge
@@ -280,4 +299,53 @@
       }
   }
 }
-*/
+//非主流分页器
+.sui-pagination {
+}
+.pagination-naked {
+    > ul {
+        > li {
+            > a,span {
+                border: none;
+                background-color: transparent !important;
+                padding: @paginationNakedPadding;
+                font-size: @baseFontSize;
+                &:hover {
+                    color: @linkColor;
+                }
+                > i {
+                    line-height: @baseLineHeight;
+                }
+            }
+        }
+    }
+   .ex-page-num {
+       & + span {
+            color: @paginationExPageStatus;
+            padding: 4px 0px;
+            &:before {
+                content: "/";
+            }
+            &:hover {
+                color: @paginationExPageStatus;
+            }
+       } 
+   }
+   
+     
+}
+.pagination-naked.pagination-large {
+    > ul {
+        > li {
+          a,span {
+              padding: @paginationNakedPaddingLarge;
+              font-size: @fontSizeLarge;
+              &.ex-page-status {
+                  padding: 4px 10px;
+                  color: @paginationExPageStatus;
+              }
+          }
+        }
+    }
+
+}
