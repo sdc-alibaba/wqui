@@ -512,14 +512,15 @@
   .help-block {
     display: block; // account for any element using help-block
 
-    margin-top: 0;
+    // margin-bottom: @baseLineHeight / 2;
+    margin-top: @baseLineHeight / 2;
   }
 
   .help-inline {
     display: inline-block;
+    margin-left: 6px;
     .ie7-inline-block();
     vertical-align: middle;
-    padding-left: 5px;
   }
 
 
@@ -580,6 +581,19 @@
     .active {
       background-color: lighten(@green, 30);
       border-color: @green;
+    }
+  }
+
+  .input-inner {
+    .input-append;
+    input {
+      .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+    }
+    .add-on {
+      margin-right: -1px;
+    }
+    .add-on + input {
+      .border-radius( 0 @inputBorderRadius @inputBorderRadius 0);
     }
   }
 
@@ -759,6 +773,7 @@
     }
     .v-top {
         vertical-align: top;
+        margin-top: 2px;
     }
     .v-bottom {
         vertical-align: bottom;    
@@ -777,7 +792,6 @@
 
     // Remove bottom margin on block level help text since that's accounted for on .control-group
     .help-block {
-      // margin-bottom: 0;
       margin-top: 0;
     }
     // And apply it only to .help-block instances that follow a form control
@@ -789,9 +803,12 @@
     .input-append,
     // Ìí¼ÓradioºÍcheckbox
     .radio,
+    .radio-pretty,
+    .checkbox-pretty,
+    .sui-dropdown,
     .checkbox {
       ~ .help-block {
-        margin-top: 0;
+        margin-top: @baseLineHeight / 2;
       }
     }
     // Move over buttons in .form-actions to align with .controls
