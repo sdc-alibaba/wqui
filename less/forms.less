@@ -512,14 +512,15 @@
   .help-block {
     display: block; // account for any element using help-block
 
-    margin-top: 0;
+    // margin-bottom: @baseLineHeight / 2;
+    margin-top: @baseLineHeight / 2;
   }
 
   .help-inline {
     display: inline-block;
+    margin-left: 6px;
     .ie7-inline-block();
     vertical-align: middle;
-    padding-left: 5px;
   }
 
 
@@ -772,6 +773,7 @@
     }
     .v-top {
         vertical-align: top;
+        margin-top: 2px;
     }
     .v-bottom {
         vertical-align: bottom;    
@@ -790,7 +792,6 @@
 
     // Remove bottom margin on block level help text since that's accounted for on .control-group
     .help-block {
-      // margin-bottom: 0;
       margin-top: 0;
     }
     // And apply it only to .help-block instances that follow a form control
@@ -802,6 +803,9 @@
     .input-append,
     // Ìí¼ÓradioºÍcheckbox
     .radio,
+    .radio-pretty,
+    .checkbox-pretty,
+    .sui-dropdown,
     .checkbox {
       ~ .help-block {
         margin-top: 0;
