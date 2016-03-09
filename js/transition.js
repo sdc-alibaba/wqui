@@ -49,10 +49,6 @@
 
       }())
 
-      return transitionEnd && {
-        end: transitionEnd
-      }
-
     })()
 
   })
